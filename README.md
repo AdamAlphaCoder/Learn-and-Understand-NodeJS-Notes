@@ -30,7 +30,6 @@
 
 ### Adding Features to JavaScript
 
-- The V8 engine not only can convert JavaScript code into Machine code, but also can convert JavaScript code into C++ code, since the V8 engine is written in C++.
 - We can add features to our JavaScript run-time environment by embedding the V8 engine in our application and using hooks inside it. We can write C++ code that we can then make available to applications running inside our JavaScript engine.
 - An example would be that JavaScript has no support for reading files and folders. But since V8 is written in C++, we can add a file reading function to JavaScript by adding that functionality to our application that embeds V8.
 - In conclusion, V8 allows us to embed it in C++ programs, and this allows us to make features inside C++ available to JavaScript. Node.JS is really just a C++ program running on the V8 engine, that has added functions that make it suitable as a server-sided language.
@@ -52,3 +51,5 @@ Below are the things that JavaScript needs to manage a server:
 - The ***C++ Core*** is a core of features of utilities built in C++, made available to JavaScript, via the hooks in the V8 engine. Hence, Node.Js is not JavaScript, but is simply a C++ program that accepts JavaScript,
 
 ### The JavaScript Core
+
+- The JavaScript core is pure JavaScript that helps make accessing the C++ functions and common JavaScript tasks and needs easier.
